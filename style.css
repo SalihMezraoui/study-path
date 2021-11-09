@@ -1,0 +1,42 @@
+body {
+    font-family: 'Open Sans'
+}
+
+header,
+main,
+footer {
+    border: 2px solid black;
+}
+
+header, main{
+    border-bottom: none;
+}
+
+main {
+    padding: 10px
+}
+
+footer {
+    text-align: right;
+}
+
+img#logo {
+    width: 300px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 7px;
+}
+
+
+nav a:hover,nav a.active  {
+    color: darkblue;
+}
