@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <img id="logo" src="https://www.hochschule-trier.de/typo3conf/ext/hochschule_trier/Resources/Public/Images/Logos/Logo_Hochschule_Trier.svg" alt="Logo">
+        <img id="logo" src="./images/logo.svg" alt="Logo">
         <nav id="mainNav">
             <a class="<?php echo $_GET['page'] == 'home' ? 'active' : '' ?>" href="index.php?page=home">Home</a>
             <a class="<?php echo $_GET['page'] == 'studiplaner' ? 'active' : '' ?>" href="index.php?page=studiplaner">Studi-Planer</a>
