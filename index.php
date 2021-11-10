@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- Hello World ich bin David -->
     <header>
         <img id="logo" src="https://www.hochschule-trier.de/typo3conf/ext/hochschule_trier/Resources/Public/Images/Logos/Logo_Hochschule_Trier.svg" alt="Logo">
         <nav id="mainNav">
