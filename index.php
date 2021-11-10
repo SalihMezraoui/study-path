@@ -26,10 +26,10 @@
 
 
     <main>
+        <!-- Seiten im Unterordner /pages einbinden -->
         <?php
-        if ($_GET && is_string($_GET['page'])) include_once 'pages/' . $_GET['page'] . '.html';
+            if ($_GET && is_string($_GET['page'])) include_once 'pages/' . $_GET['page'] . '.html';
         ?>
-
     </main>
 
     <footer>
@@ -39,5 +39,5 @@
             <a class="<?php echo $_GET['page'] == 'impressum' ? 'active' : '' ?>" href="index.php?page=impressum">Impressum</a>
         </nav>
     </footer>
-
+</body>
 </html>
