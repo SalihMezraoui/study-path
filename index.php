@@ -1,3 +1,4 @@
+<?php if (!$_GET || !is_string($_GET['page'])) header("Location: index.php?page=home"); ?>
 <!DOCTYPE html>
 <html lang="de">
 
