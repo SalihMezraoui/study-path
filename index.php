@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <!-- Hello World ich bin David -->
     <header>
         <img id="logo" src="https://www.hochschule-trier.de/typo3conf/ext/hochschule_trier/Resources/Public/Images/Logos/Logo_Hochschule_Trier.svg" alt="Logo">
         <nav id="mainNav">
@@ -28,7 +28,7 @@
     <main>
         <!-- Seiten im Unterordner /pages einbinden -->
         <?php
-            if ($_GET && is_string($_GET['page'])) include_once 'pages/' . $_GET['page'] . '.html';
+        if ($_GET && is_string($_GET['page'])) include_once 'pages/' . $_GET['page'] . '.html';
         ?>
     </main>
 
@@ -40,4 +40,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
