@@ -1,7 +1,7 @@
 # studi-guide
 
 Seiten für die erste Abgabe:
-- Anleitungen: Marius
+- Marius: Anleitungen
 - Salah: Studentenleben
 - Imad: Studieninteressierte
 - David: Studi-Planer
