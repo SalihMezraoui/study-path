@@ -13,7 +13,6 @@
 </head>
 
 <body>
-     <!-- Hallo Welt, ich bin Marius :) -->
     <header>
         <img id="logo" src="./images/logo.svg" alt="Logo">
         <nav id="mainNav">
