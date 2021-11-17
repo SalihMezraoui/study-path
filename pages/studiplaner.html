@@ -1,4 +1,73 @@
-<a href="https://idp.fh-trier.de/idp/profile/SAML2/Redirect/SSO?execution=e1s1" target="_blank">Login</a><br>
-Hello Studi-Planer
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel consequuntur alias amet veritatis labore fuga sequi
-    temporibus expedita voluptate ad exercitationem, earum at voluptatem ea recusandae ex fugiat dolorem odio!</p>
+<style>
+    #topBar {
+        display: flex;
+    }
+
+    #topBar .leftContainer {
+        flex-basis: 90%;
+    }
+
+    #topBar .rightContainer {
+        text-align: right;
+        width: 100%;
+    }
+</style>
+
+<a href="https://studip.hochschule-trier.de/index.php?again=yes&sso=shibldap" target="_blank"
+    id="studiPlanerLogin">Login</a>
+
+<div id="showWhenLoggedIn" style="display:none">
+    <div id="topBar">
+        <div class="leftContainer">
+            <h4 style="margin-top: 0px;">Willkommen zurück, Max Mustermann!</h4>
+            <p>Wähle jetzt aus zu welchem Modul du den Studi-Planer öffnen willst.</p>
+        </div>
+        <div class="rightContainer">
+            <a href="javascript:void(0)" id="studiPlanerLogout">
+                Ausloggen
+            </a>
+        </div>
+    </div>
+
+    <div id="studiPlaner">
+        <label for="moduleSelect">Modul auswählen:</label>
+
+        <select name="modules" id="moduleSelect">
+            <option value="">--Bitte Modul auswählen--</option>
+            <option value="angewandteLogik">Angewandte Logik</option>
+            <option value="webTechnologien">Web-Technologien</option>
+            <option value="webEntwicklung">Web-Entwicklung</option>
+            <option value="programmierParadigmen">Programmierparadigmen</option>
+            <option value="analysis">Analysis</option>
+            <option value="lineareAlgebra">Lineare Algebra</option>
+        </select>
+
+    </div>
+</div>
+
+
+<script>
+    // LOGIN BUTTON HANDLER
+    document.addEventListener('click', function (event) {
+        if (!event.target.matches('#studiPlanerLogin')) return;
+        setTimeout(() => {
+            var elem = document.querySelector('#showWhenLoggedIn');
+            elem.style.display = "block";
+            event.target.style.display = "none";
+        }, 500);
+    }, false);
+
+    // LOGOUT BUTTON HANDLER
+    document.addEventListener('click', function (event) {
+        if (!event.target.matches('#studiPlanerLogout')) return;
+        var elem = document.querySelector('#showWhenLoggedIn');
+        elem.style.display = "none";
+        document.querySelector('#studiPlanerLogin').style.display = "block";
+    }, false);
+
+    // MODULE SELECT HANDLER
+    document.addEventListener('input', function (event) {
+        if (event.target.id !== 'moduleSelect') return;
+        console.log('changed to:', event.target.value);
+    }, false);
+</script>
