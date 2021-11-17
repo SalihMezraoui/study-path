@@ -40,7 +40,3 @@ nav a {
 nav a:hover,nav a.active  {
     color: darkblue;
 }
-
-.studieninteressierte {
-    height: fit-content;
-}
