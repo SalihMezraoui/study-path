@@ -77,3 +77,13 @@ nav a.active {
     display: block;
     font-size: 30pt;
 }
+
+.Studieninteressierte {
+    height: fit-content;
+}
+
+.sidenav {
+    height: auto;
+    border: black;
+    width: 200em;
+}
