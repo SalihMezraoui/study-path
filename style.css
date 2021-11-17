@@ -87,3 +87,12 @@ nav a.active {
     border: black;
     width: 200em;
 }
+
+.content_Studieninteressierte {
+        margin-left: 200px;
+        padding: 0px 10px;
+    }
+
+p.solid {
+    border-style: solid;
+}
