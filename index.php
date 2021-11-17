@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <img id="logo" src="./images/logo.svg" alt="Logo">
+        <a href="index.php?page=home"><img id="logo" src="./images/logo.svg" alt="Logo"></a>
         <nav id="mainNav">
             <a class="<?php echo $_GET['page'] == 'home' ? 'active' : '' ?>" href="index.php?page=home">Home</a>
             <a class="<?php echo $_GET['page'] == 'studiplaner' ? 'active' : '' ?>" href="index.php?page=studiplaner">Studi-Planer</a>
