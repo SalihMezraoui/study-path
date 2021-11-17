@@ -1,5 +1,7 @@
+<?php if (!$_GET || !is_string($_GET['page'])) header("Location: index.php?page=home"); ?>
 <!DOCTYPE html>
 <html lang="de">
+
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +13,8 @@
 </head>
 
 <body>
-
     <header>
-        <img id="logo" src="https://www.hochschule-trier.de/typo3conf/ext/hochschule_trier/Resources/Public/Images/Logos/Logo_Hochschule_Trier.svg" alt="Logo">
+        <img id="logo" src="./images/logo.svg" alt="Logo">
         <nav id="mainNav">
             <a class="<?php echo $_GET['page'] == 'home' ? 'active' : '' ?>" href="index.php?page=home">Home</a>
             <a class="<?php echo $_GET['page'] == 'studiplaner' ? 'active' : '' ?>" href="index.php?page=studiplaner">Studi-Planer</a>
@@ -28,7 +29,7 @@
     <main>
         <!-- Seiten im Unterordner /pages einbinden -->
         <?php
-            if ($_GET && is_string($_GET['page'])) include_once 'pages/' . $_GET['page'] . '.html';
+        if ($_GET && is_string($_GET['page'])) include_once 'pages/' . $_GET['page'] . '.html';
         ?>
     </main>
 
@@ -40,4 +41,5 @@
         </nav>
     </footer>
 </body>
+
 </html>

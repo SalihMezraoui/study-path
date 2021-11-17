@@ -8,7 +8,8 @@ footer {
     border: 2px solid black;
 }
 
-header, main{
+header,
+main {
     border-bottom: none;
 }
 
@@ -36,7 +37,43 @@ nav a {
     margin-right: 7px;
 }
 
-
-nav a:hover,nav a.active  {
+nav a:hover,
+nav a.active {
     color: darkblue;
+}
+
+.anleitungen {
+    height: fit-content;
+}
+
+.sidenav {
+    height: auto;
+    width: 200px;
+    position: fixed;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #911515
+}
+
+.sidenav h {
+    padding-top: 20px;
+    display: block;
+}
+
+.content_anleitungen {
+    margin-left: 200px;
+    padding: 0px 10px;
+}
+
+.content_anleitungen a {
+    display: block;
+    font-size: 30pt;
 }
