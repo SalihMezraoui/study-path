@@ -15,7 +15,7 @@
   Access information on academic programs, enrollment, and extracurricular activities to enrich student life.
 
 
-## Technical Details
+## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: PHP  
