@@ -1,0 +1,63 @@
+<div class="aks_question_form">
+    <h2>Stelle eine Frage:</h2>
+    <form>
+        <p class="ask_question_caption">Themenbereich:
+        <p>
+        <div class="ask_question_radio">
+            <label for="allgemeines">
+                <input type="radio" id="allgemeines" value="allgemeines" name="themenbereich">
+                Allgemeines
+            </label>
+
+            <label for="rechenzentrum">
+                <input type="radio" id="rechenzentrum" value="rechenzentrum" name="themenbereich">
+                Rechenzentrum
+            </label>
+
+            <label for="fachschaften">
+                <input type="radio" id="fachschaften" value="fachschaften" name="themenbereich">
+                Fachschaften</label>
+
+            <label for="informatik">
+                <input type="radio" id="informatik" value="informatik" name="themenbereich">
+                Informatik</label>
+
+            <label for="technik">
+                <input type="radio" id="technik" value="technik" name="themenbereich">
+                Technik</label>
+
+            <label for="wirtschaft">
+                <input type="radio" id="wirtschaft" value="wirtschaft" name="themenbereich">
+                Wirtschaft</label>
+
+            <label for="architektur">
+                <input type="radio" id="architektur" value="architektur" name="themenbereich">
+                Architektur</label>
+
+        </div>
+        <label for="input_title" class="ask_question_caption">Titel:</label><br>
+        <input type="text" id="input_title" style="max-width: 100%;" placeholder="Gib hier den Titel an."><br><br>
+
+        <label for="input_text" class="ask_question_caption">Frage:</label><br>
+        <textarea id="input_text" style="max-width: 100%;"
+            placeholder="Gib hier die Frage an, die du stellen möchtest."></textarea><br><br>
+
+        <div id="div_tags">
+            <div>
+                <label for="input_tags" class="ask_question_caption">Tags:</label><br>
+                <input type="text" id="input_tags" style="max-width: 100%;"><br><br>
+            </div>
+            <div style="margin-left: 10px">
+                <button type="button" class="btn_ask_question" id="btn_add_tag">Hinzufügen</button>
+            </div>
+        </div>
+
+        <div id="tag_container" style="display: flex;"></div>
+        <br>
+
+
+    </form>
+    <button class="btn_ask_question" id="btn_ask_question">Senden</button>
+</div>
+
+<script src="./scripts/forum.js"></script>
