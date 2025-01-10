@@ -67,4 +67,62 @@
          url('./open-sans-v27-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('./open-sans-v27-latin-italic.svg#OpenSans') format('svg'); /* Legacy iOS */
   }
+
+
+
+/* OpenDyslexicAlta */
+
+  @font-face {
+     font-family: 'OpenDyslexicAlta';
+     src: url('./OpenDyslexicAlta-Italic.eot');
+     src: url('./OpenDyslexicAlta-Italic.eot?#iefix') format('embedded-opentype'),
+         url('./OpenDyslexicAlta-Italic.woff2') format('woff2'),
+         url('./OpenDyslexicAlta-Italic.woff') format('woff'),
+         url('./OpenDyslexicAlta-Italic.ttf') format('truetype'),
+         url('./OpenDyslexicAlta-Italic.svg#OpenDyslexicAlta-Italic') format('svg');
+     font-weight: normal;
+     font-style: italic;
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'OpenDyslexicAlta';
+     src: url('./OpenDyslexicAlta-Bold.eot');
+     src: url('./OpenDyslexicAlta-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./OpenDyslexicAlta-Bold.woff2') format('woff2'),
+         url('./OpenDyslexicAlta-Bold.woff') format('woff'),
+         url('./OpenDyslexicAlta-Bold.ttf') format('truetype'),
+         url('./OpenDyslexicAlta-Bold.svg#OpenDyslexicAlta-Bold') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'OpenDyslexicAlta';
+     src: url('./OpenDyslexicAlta-Regular.eot');
+     src: url('./OpenDyslexicAlta-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./OpenDyslexicAlta-Regular.woff2') format('woff2'),
+         url('./OpenDyslexicAlta-Regular.woff') format('woff'),
+         url('./OpenDyslexicAlta-Regular.ttf') format('truetype'),
+         url('./OpenDyslexicAlta-Regular.svg#OpenDyslexicAlta-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'OpenDyslexicAlta';
+     src: url('./OpenDyslexicAlta-BoldItalic.eot');
+     src: url('./OpenDyslexicAlta-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('./OpenDyslexicAlta-BoldItalic.woff2') format('woff2'),
+         url('./OpenDyslexicAlta-BoldItalic.woff') format('woff'),
+         url('./OpenDyslexicAlta-BoldItalic.ttf') format('truetype'),
+         url('./OpenDyslexicAlta-BoldItalic.svg#OpenDyslexicAlta-BoldItalic') format('svg');
+     font-weight: bold;
+     font-style: italic;
+     font-display: swap;
+ }
+ 
+ 
   
